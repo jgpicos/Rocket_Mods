@@ -130,7 +130,7 @@ class Play extends Phaser.Scene {
             },
             fixedWidth: 400
         }
-        this.scoreLeft = this.add.text(borderUISize + borderPadding, borderUISize + borderPadding*2, `Score: ${this.currentScore}, my name is ${this.countDown}`, scoreConfig);
+        this.scoreLeft = this.add.text(borderUISize + borderPadding, borderUISize + borderPadding*2, `Score: ${this.currentScore}, Time: ${this.countDown}`, scoreConfig);
         
         // GAME OVER flag
         this.gameOver = false;
