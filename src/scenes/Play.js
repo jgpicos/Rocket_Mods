@@ -241,7 +241,7 @@ class Play extends Phaser.Scene {
         // score add and repaint
         this.clock.delay += 3000;
         this.currentScore += 1;
-        this.scoreLeft.text = `Score: ${this.currentScore}, my name is ${this.countDown}`;  
+        this.scoreLeft.text = `Score: ${this.currentScore}, Time: ${this.countDown}`;  
         this.sound.play('sfx_explosion');    
       }
 }
