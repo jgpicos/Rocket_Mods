@@ -182,7 +182,7 @@ class Play extends Phaser.Scene {
         
 
         if (!this.gameOver) {   
-            this.scoreLeft.text = `Score: ${this.currentScore}, my name is ${this.countDown}`;
+            this.scoreLeft.text = `Score: ${this.currentScore}, Time: ${this.countDown}`;
             this.pRocket.update();         // update rocket sprites
             this.ship1.update();           // update spaceships (x3)
             this.ship2.update();
