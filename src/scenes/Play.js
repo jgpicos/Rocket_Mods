@@ -158,7 +158,7 @@ class Play extends Phaser.Scene {
     }
 
     update() {
-        this.countDown = (60 - Math.ceil(this.clock.elapsed / 1000));
+        this.countDown = (Math.ceil(this.clock.delay / 1000) - Math.ceil(this.clock.elapsed / 1000));
         
 
         // check key input for restart
@@ -239,6 +239,7 @@ class Play extends Phaser.Scene {
           boom.destroy();                       // remove explosion sprite
         }); 
         // score add and repaint
+        this.clock.delay += 3000;
         this.currentScore += 1;
         this.scoreLeft.text = `Score: ${this.currentScore}, my name is ${this.countDown}`;  
         this.sound.play('sfx_explosion');    

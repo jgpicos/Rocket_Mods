@@ -4,20 +4,20 @@ Jesus Picos, Rocket Patrol Mods, April 19 2021, took ~10
 Point Break down: 
     5:
         -New Scrolling Background
-        -Player controlled rocket
+        -Player controlled rocket (left right when firing)
     
     10: 
         -Display time remaining
-        -New animated sprite of ships
+        -New animated sprite of ships (collisions?)
         -Paralax scrolling
 
     20: 
         -New Smaller spaceships worth more
         -Alternating 2 players
-        -
+        -Shooting enemies increases time
     
     Total: 
-        80
+        100
 */
 
 let config = {
