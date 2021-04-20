@@ -5,7 +5,15 @@ class Ship extends Phaser.GameObjects.Sprite {
     }
 
     update() {
-        this.x -= game.settings.spaceshipSpeed;;
+        this.x -= game.settings.spaceshipSpeed;
+        if(this.x < -this.width) {
+            this.x = game.config.width + Math.random()*500;
+            this.y= (Math.random() * (350 - 110) + 110);
+        }
+    }
+
+    speedUpdate () {
+        this.x -= (game.settings.spaceshipSpeed * 2);
         if(this.x < -this.width) {
             this.x = game.config.width + Math.random()*500;
             this.y= (Math.random() * (350 - 110) + 110);
